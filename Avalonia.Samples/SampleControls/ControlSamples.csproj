@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Update="**\*.xaml.cs">
+      <DependentUpon>%(Filename)</DependentUpon>
+    </Compile>
+    <AvaloniaResource Include="**\*.xaml">
+      <SubType>Designer</SubType>
+    </AvaloniaResource>
+  </ItemGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="Avalonia" Version="0.10.999-cibuild0019370-beta" />
+  </ItemGroup>
+  
+  <!-- <Import Project="..\..\build\BuildTargets.targets" /> -->
+
+</Project>

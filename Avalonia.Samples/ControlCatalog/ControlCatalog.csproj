@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>    
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Update="**\*.xaml.cs">
+      <DependentUpon>%(Filename)</DependentUpon>
+    </Compile>
+    <AvaloniaResource Include="**\*.xaml">
+      <SubType>Designer</SubType>
+    </AvaloniaResource>
+    <AvaloniaResource Include="Assets\*" />
+    <AvaloniaResource Include="Assets\Fonts\*" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\Fonts\SourceSansPro-Bold.ttf" />
+    <EmbeddedResource Include="Assets\Fonts\SourceSansPro-BoldItalic.ttf" />
+    <EmbeddedResource Include="Assets\Fonts\SourceSansPro-Italic.ttf" />
+    <EmbeddedResource Include="Assets\Fonts\SourceSansPro-Regular.ttf" />
+    <EmbeddedResource Include="Pages\teapot.bin" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- <ProjectReference Include="..\..\packages\Avalonia\Avalonia.csproj" /> -->
+    <PackageReference Include="Avalonia" Version="0.10.999-cibuild0019370-beta" />
+
+    <PackageReference Include="Avalonia.Controls.DataGrid" Version="0.10.999-cibuild0019370-beta" />
+    <!-- <ProjectReference Include="..\..\src\Avalonia.Controls.DataGrid\Avalonia.Controls.DataGrid.csproj" /> -->
+    <ProjectReference Include="..\MiniMvvm\MiniMvvm.csproj" />
+    <ProjectReference Include="..\SampleControls\ControlSamples.csproj" />
+  </ItemGroup>
+
+  <!-- <Import Project="..\..\build\BuildTargets.targets" /> -->
+</Project>
