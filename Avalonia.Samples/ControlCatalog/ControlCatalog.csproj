@@ -24,9 +24,9 @@
 
   <ItemGroup>
     <!-- <ProjectReference Include="..\..\packages\Avalonia\Avalonia.csproj" /> -->
-    <PackageReference Include="Avalonia" Version="0.10.999-cibuild0019370-beta" />
+    <PackageReference Include="Avalonia" Version="0.10.999-cibuild0019476-beta" />
 
-    <PackageReference Include="Avalonia.Controls.DataGrid" Version="0.10.999-cibuild0019370-beta" />
+    <PackageReference Include="Avalonia.Controls.DataGrid" Version="0.10.999-cibuild0019476-beta" />
     <!-- <ProjectReference Include="..\..\src\Avalonia.Controls.DataGrid\Avalonia.Controls.DataGrid.csproj" /> -->
     <ProjectReference Include="..\MiniMvvm\MiniMvvm.csproj" />
     <ProjectReference Include="..\SampleControls\ControlSamples.csproj" />

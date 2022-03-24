@@ -4,6 +4,9 @@ using System.Threading.Tasks;
 using LiveChartsCore;
 using LiveChartsCore.Defaults;
 using LiveChartsCore.SkiaSharpView;
+using LiveChartsCore.SkiaSharpView.Painting;
+using LiveChartsCore.SkiaSharpView.Painting.Effects;
+using SkiaSharp;
 
 namespace AvaloniaTest.ViewModels;
 
@@ -53,6 +56,24 @@ public class LiveChartsSampleViewModel : ViewModelBase {
         _rgen.Next(20, 150)
     );
 
+
+
+    public ObservableCollection<RectangularSection> Sections { get; set; }
+        = new ObservableCollection<RectangularSection>
+        {
+            new RectangularSection
+            {
+                Yi = 25,
+                Yj = 25,
+                Stroke = new SolidColorPaint
+                {
+                    Color = SKColors.Red,
+                    StrokeThickness = 3,
+                    PathEffect = new DashEffect(new float[] { 6, 6 })
+                }
+            },
+        };
+
     public ISeries[] Series { get; set; }
 
     private readonly Action<Action> _uiThreadInvoker;
@@ -83,7 +104,7 @@ public class LiveChartsSampleViewModel : ViewModelBase {
         // _delay           = 1;
         // var readTasks = 10;
 
-
+        return; // KILL
         // create {readTasks} parallel tasks that will add a point every {_delay} milliseconds
         for (var i = 0; i < _tasks; i++)
         {

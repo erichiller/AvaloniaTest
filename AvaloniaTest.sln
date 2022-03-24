@@ -9,6 +9,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AvaloniaTest.Web", "Avaloni
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AvaloniaTest.Android", "AvaloniaTest.Android\AvaloniaTest.Android.csproj", "{7AD1DAC8-7FBE-49D5-8614-7321233DB82E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Avalonia.Samples", "Avalonia.Samples", "{5E538945-2AAD-4A4F-8BCA-9450E8988F67}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlCatalog.Web", "Avalonia.Samples\ControlCatalog.Web\ControlCatalog.Web.csproj", "{F4CB57DD-1115-4A26-B00B-7A108ECE8E4C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlCatalog", "Avalonia.Samples\ControlCatalog\ControlCatalog.csproj", "{E6790DE2-3D64-4FDD-A1CB-C21DFBED27AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlSamples", "Avalonia.Samples\SampleControls\ControlSamples.csproj", "{9182302C-3C1D-4EF9-9FDB-60B45477A127}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniMvvm", "Avalonia.Samples\MiniMvvm\MiniMvvm.csproj", "{15F50510-614D-495F-A220-4D7A6E36E927}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,5 +41,27 @@ Global
 		{7AD1DAC8-7FBE-49D5-8614-7321233DB82E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7AD1DAC8-7FBE-49D5-8614-7321233DB82E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7AD1DAC8-7FBE-49D5-8614-7321233DB82E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4CB57DD-1115-4A26-B00B-7A108ECE8E4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4CB57DD-1115-4A26-B00B-7A108ECE8E4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4CB57DD-1115-4A26-B00B-7A108ECE8E4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4CB57DD-1115-4A26-B00B-7A108ECE8E4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6790DE2-3D64-4FDD-A1CB-C21DFBED27AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6790DE2-3D64-4FDD-A1CB-C21DFBED27AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6790DE2-3D64-4FDD-A1CB-C21DFBED27AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6790DE2-3D64-4FDD-A1CB-C21DFBED27AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9182302C-3C1D-4EF9-9FDB-60B45477A127}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9182302C-3C1D-4EF9-9FDB-60B45477A127}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9182302C-3C1D-4EF9-9FDB-60B45477A127}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9182302C-3C1D-4EF9-9FDB-60B45477A127}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15F50510-614D-495F-A220-4D7A6E36E927}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15F50510-614D-495F-A220-4D7A6E36E927}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15F50510-614D-495F-A220-4D7A6E36E927}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15F50510-614D-495F-A220-4D7A6E36E927}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F4CB57DD-1115-4A26-B00B-7A108ECE8E4C} = {5E538945-2AAD-4A4F-8BCA-9450E8988F67}
+		{E6790DE2-3D64-4FDD-A1CB-C21DFBED27AB} = {5E538945-2AAD-4A4F-8BCA-9450E8988F67}
+		{9182302C-3C1D-4EF9-9FDB-60B45477A127} = {5E538945-2AAD-4A4F-8BCA-9450E8988F67}
+		{15F50510-614D-495F-A220-4D7A6E36E927} = {5E538945-2AAD-4A4F-8BCA-9450E8988F67}
 	EndGlobalSection
 EndGlobal

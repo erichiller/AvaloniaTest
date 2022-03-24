@@ -30,8 +30,13 @@
         <!-- UpdaterThrottler="00:00:00.500" -->
         <!-- AnimationsSpeed="00:00:00.500" -->
         <lvc:CartesianChart
-            XAxes="{Binding XAxes}"
-            Series="{Binding Series}">
+                x:Name="chart"
+                XAxes="{Binding XAxes}"
+                Series="{Binding Series}"
+                Sections="{Binding Sections}"
+                PointerMoved="ChartPointerMoved"
+                >
+                <!-- PointerPressed="ChartPointerPressed" -->
         </lvc:CartesianChart>
         
         <!-- <TextBox>eee</TextBox> -->

@@ -1,5 +1,7 @@
 # GUI Performance Tests
 
+- [ ] Convert AvaloniaTest.Web to use a single process with await
+
 **CPU is devided by core**
 _So 100% CPU = 1 Core full usage, on a 6 core system = 16.66%, on an 8 Core = 12.5%_
 
@@ -72,3 +74,14 @@ See <https://www.bing.com/search?q=Uncaught%20RuntimeError>
 
 **confirmed -- THIS ONLY HAPPENS WHEN THE DEVELOPER CONSOLE / TOOLS IS OPEN**
 
+### WASM on Android Phone
+
+SkiaSharp.Blazor sample GPU still ran at ~60fps , the same as in the desktop browser
+
+LiveCharts2 Sample Blazor seemed to run very smoothly
+
+AvaloniaTest.Web seemed to run relatively well
+
+Avalonia.Samples ControlCatalog.Web - doesn't load. No Errors though
+
+**NOTE** It takes a long time to load on mobile, even over WiFi

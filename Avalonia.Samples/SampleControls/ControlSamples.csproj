@@ -15,7 +15,7 @@
   </ItemGroup>
   
   <ItemGroup>
-    <PackageReference Include="Avalonia" Version="0.10.999-cibuild0019370-beta" />
+    <PackageReference Include="Avalonia" Version="0.10.999-cibuild0019476-beta" />
   </ItemGroup>
   
   <!-- <Import Project="..\..\build\BuildTargets.targets" /> -->

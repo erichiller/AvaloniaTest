@@ -15,8 +15,8 @@
 	<TrimmableAssembly Include="Avalonia.Themes.Default" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Avalonia.Desktop" Version="0.10.999-cibuild0019370-beta" />
-    <PackageReference Include="Avalonia.Diagnostics" Version="0.10.999-cibuild0019370-beta" />
+    <PackageReference Include="Avalonia.Desktop" Version="0.10.999-cibuild0019476-beta" />
+    <PackageReference Include="Avalonia.Diagnostics" Version="0.10.999-cibuild0019476-beta" />
     <!--Condition below is needed to remove Avalonia.Diagnostics package from build output in Release configuration.-->
   </ItemGroup>
   <ItemGroup>
