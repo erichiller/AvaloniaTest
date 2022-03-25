@@ -30,11 +30,12 @@
         <!-- UpdaterThrottler="00:00:00.500" -->
         <!-- AnimationsSpeed="00:00:00.500" -->
         <lvc:CartesianChart
-                x:Name="chart"
+                x:Name="OhlcChart"
                 XAxes="{Binding XAxes}"
                 Series="{Binding Series}"
                 Sections="{Binding Sections}"
                 PointerMoved="ChartPointerMoved"
+                ZoomMode="X"
                 >
                 <!-- PointerPressed="ChartPointerPressed" -->
         </lvc:CartesianChart>
